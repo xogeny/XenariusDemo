@@ -1,0 +1,25 @@
+compilation "comp" {
+  model _ "model";
+  dependencies "deps?" {
+    library _(version="$string") "library*";
+  }
+
+  format '/^(JS|Dymola|OM)$/' "format";
+}
+
+dialogs "dialogs" {
+  dialog _(title="$string") "dialog*" {
+    parameter _(title="$string") "parameter*";
+  }
+}
+
+part _ "part*" {
+  string _ "source";
+  file _ "source";
+  attr _ = _ "attr*";
+  bind _ = _ "bind*";
+}
+
+animation _ "animation*" {
+  _ _(_="$_") "object";
+}
