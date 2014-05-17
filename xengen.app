@@ -1,7 +1,6 @@
 Modelica m1(name="Mechanism.Mechanism",format="JS") {
   dependencies {
-    library PlanarMechanics(version="1.2.0");
-    library Modelica(version="3.2");
+    git PlanarMechanics(url="https://github.com/xogeny/XenariusDemo.git", ref="master");
   }
 
   parameters {
