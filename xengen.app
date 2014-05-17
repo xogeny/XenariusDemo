@@ -1,6 +1,7 @@
 Modelica m1(name="Mechanism.Mechanism",format="JS") {
   dependencies {
-    git PlanarMechanics(url="https://github.com/xogeny/XenariusDemo.git", ref="master");
+    git PlanarMechanics(url="https://github.com/dzimmer/PlanarMechanics.git", ref="master");
+    git Mechanism(url="https://github.com/xogeny/XenariusDemo.git", ref="master");
   }
 
   parameters {
