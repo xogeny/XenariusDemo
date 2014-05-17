@@ -1,6 +1,4 @@
-model m1 {
-  type Modelica(name="Mechanism.Mechanism",format="JS");
-
+Modelica m1(name="Mechanism.Mechanism",format="JS") {
   dependencies {
     library PlanarMechanics(version="1.2.0");
     library Modelica(version="3.2");
